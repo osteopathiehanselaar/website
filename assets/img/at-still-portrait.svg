@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <rect width="240" height="240" rx="24" fill="#F2EDE4"/>
+  <!-- Simple line portrait: bearded gentleman, late-1800s collar -->
+  <g stroke="#3C5341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- shoulders / collar -->
+    <path d="M55 215c0-30 25-45 65-45s65 15 65 45" />
+    <path d="M95 178c5 10 25 10 30 0" />
+    <!-- head -->
+    <ellipse cx="120" cy="118" rx="42" ry="48" />
+    <!-- ears -->
+    <path d="M78 115c-6 2-8 10-2 16" />
+    <path d="M162 115c6 2 8 10 2 16" />
+    <!-- hair -->
+    <path d="M80 95c4-22 24-36 40-36s36 14 40 36" />
+    <!-- beard -->
+    <path d="M84 120c-2 26 12 52 36 56 24-4 38-30 36-56" />
+    <path d="M96 150c8 8 32 8 48 0" />
+    <!-- glasses -->
+    <circle cx="103" cy="112" r="12" />
+    <circle cx="137" cy="112" r="12" />
+    <path d="M115 112h10" />
+    <path d="M91 108l-10-4" />
+    <path d="M149 108l10-4" />
+  </g>
+</svg>

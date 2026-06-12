@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="#3C5341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- running figure -->
+    <circle cx="118" cy="48" r="12"/>
+    <path d="M114 60 100 90"/>
+    <path d="M100 90 78 110"/>
+    <path d="M100 90 122 118"/>
+    <path d="M78 110 60 150"/>
+    <path d="M122 118 145 105"/>
+    <!-- arms -->
+    <path d="M108 70 80 60"/>
+    <path d="M108 70 132 86"/>
+    <!-- motion lines -->
+    <path d="M30 80h28" stroke-dasharray="3 6"/>
+    <path d="M20 100h34" stroke-dasharray="3 6"/>
+    <path d="M30 120h26" stroke-dasharray="3 6"/>
+  </g>
+  <!-- accent -->
+  <circle cx="60" cy="150" r="4" fill="#C2784A" opacity="0.7"/>
+</svg>

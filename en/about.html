@@ -128,20 +128,61 @@
     <!-- Team -->
     <section class="mx-auto max-w-7xl px-6 py-24 lg:px-10 lg:py-32">
       <div class="reveal mx-auto max-w-2xl text-center">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-500">The osteopath</p>
-        <h2 class="mt-4 font-display text-3xl font-medium tracking-tight text-sage-900 sm:text-4xl">Meet me</h2>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-500">The team</p>
+        <h2 class="mt-4 font-display text-3xl font-medium tracking-tight text-sage-900 sm:text-4xl">Meet us</h2>
+        <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">Click on a colleague to read their full story.</p>
       </div>
 
-      <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mx-auto mt-16 grid max-w-4xl gap-8 sm:grid-cols-2">
         <!-- Team member -->
-        <article class="reveal reveal-d1 card-hover overflow-hidden rounded-3xl bg-paper sm:col-start-1 lg:col-start-2">
+        <article class="reveal reveal-d1 card-hover overflow-hidden rounded-3xl bg-paper">
           <div class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-sage-100 to-cream-dark">
             <span class="font-display text-5xl font-medium text-sage-400">LH</span>
           </div>
           <div class="p-7">
             <h3 class="font-display text-xl font-medium text-sage-900">Levi Hanselaar</h3>
-            <p class="mt-1 text-sm font-semibold text-clay-500">Osteopath Msc. DO-MRO</p>
+            <p class="mt-1 text-sm font-semibold text-clay-500">Osteopath MSc. DO-MRO</p>
             <p class="mt-3 text-sm leading-relaxed text-ink-soft">Guides clients of all ages with a personal, calm approach — from back and joint complaints to babies, sports and pregnancy.</p>
+            <button type="button" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-sage-700 transition-colors hover:text-sage-800" data-accordion-trigger aria-controls="bio-levi" aria-expanded="false">
+              Read Levi's story
+              <span data-accordion-icon class="inline-flex transition-transform duration-300">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </button>
+            <div id="bio-levi" class="overflow-hidden transition-[max-height] duration-300 ease-[var(--ease-elegant)]" style="max-height: 0px">
+              <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                Ever since I was a child, I've dreamed of understanding the human body as well as I possibly could. That curiosity took me from physiotherapy at Zuyd University of Applied Sciences (2019-2023), through osteopathy at IAO Antwerp (2023-2027), to medicine at Maastricht University (2027-present).
+              </p>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                My particular interests lie in orofacial complaints, sports, and treating babies and children — three very different worlds that often complement each other surprisingly well in practice.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Team member -->
+        <article class="reveal reveal-d2 card-hover overflow-hidden rounded-3xl bg-paper">
+          <div class="flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-clay-50 to-cream-dark">
+            <span class="font-display text-5xl font-medium text-clay-400">BH</span>
+          </div>
+          <div class="p-7">
+            <h3 class="font-display text-xl font-medium text-sage-900">Bente Hompesch</h3>
+            <p class="mt-1 text-sm font-semibold text-clay-500">Osteopath MSc. DO-MRO</p>
+            <p class="mt-3 text-sm leading-relaxed text-ink-soft">With her background in physiotherapy and osteopathy, Bente offers warm, expert care — with special attention for pregnancy, the pelvis and the youngest patients.</p>
+            <button type="button" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-sage-700 transition-colors hover:text-sage-800" data-accordion-trigger aria-controls="bio-bente" aria-expanded="false">
+              Read Bente's story
+              <span data-accordion-icon class="inline-flex transition-transform duration-300">
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M5 12h14"/></svg>
+              </span>
+            </button>
+            <div id="bio-bente" class="overflow-hidden transition-[max-height] duration-300 ease-[var(--ease-elegant)]" style="max-height: 0px">
+              <p class="mt-4 text-sm leading-relaxed text-ink-soft">
+                Bente combines a degree in physiotherapy from Zuyd University of Applied Sciences (2019-2023) with a follow-up training in osteopathy (2024-2028). From that broad foundation, she always looks at the body as a whole.
+              </p>
+              <p class="mt-3 text-sm leading-relaxed text-ink-soft">
+                Her particular interest lies in pregnancy, pelvic issues and the care of babies and children. With her patient, attentive approach, (expecting) parents and young children quickly feel at ease.
+              </p>
+            </div>
           </div>
         </article>
       </div>

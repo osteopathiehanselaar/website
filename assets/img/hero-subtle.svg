@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" fill="none">
+  <style>
+    .dot-breathe { transform-origin: 346px 138px; animation: dot-breathe 8s ease-in-out infinite; }
+    @keyframes dot-breathe {
+      0%, 100% { opacity: 0.5; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.35); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .dot-breathe { animation: none; }
+    }
+  </style>
+  <!-- Soft organic backdrop -->
+  <ellipse cx="248" cy="280" rx="200" ry="210" fill="#E1E9E1"/>
+  <path d="M90 360C70 280 100 170 190 120C280 70 380 110 410 200C440 290 390 400 290 440C190 480 110 440 90 360Z" fill="#F5DECC" fill-opacity="0.4"/>
+
+  <!-- Single delicate line illustration: a sprig / branch -->
+  <g stroke="#3C5341" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.55">
+    <path d="M150 410C170 330 200 240 260 150"/>
+    <path d="M192 320c14-18 36-22 52-10"/>
+    <path d="M214 270c12-16 32-20 46-10"/>
+    <path d="M236 220c10-14 28-18 40-10"/>
+    <path d="M258 172c8-12 22-16 32-10"/>
+  </g>
+
+  <!-- Quiet accent dot -->
+  <circle class="dot-breathe" cx="346" cy="138" r="6" fill="#C2784A"/>
+
+  <!-- Thin ring accent -->
+  <circle cx="248" cy="280" r="158" stroke="#A1B8A3" stroke-width="1" opacity="0.5"/>
+</svg>

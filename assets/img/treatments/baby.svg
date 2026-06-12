@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <g stroke="#3C5341" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cradling hands/arms -->
+    <path d="M30 140c10-30 30-50 50-50"/>
+    <path d="M170 140c-10-30-30-50-50-50"/>
+    <path d="M30 140c20-12 50-18 70-18s50 6 70 18"/>
+    <!-- baby body wrapped -->
+    <path d="M70 132c0-14 13-25 30-25s30 11 30 25c0 12-13 22-30 22s-30-10-30-22Z"/>
+    <!-- baby head -->
+    <circle cx="100" cy="92" r="18"/>
+    <!-- hair tuft -->
+    <path d="M96 76c2-4 6-6 9-5"/>
+    <!-- closed eyes -->
+    <path d="M92 94c2 2 5 2 7 0"/>
+    <path d="M104 94c2 2 5 2 7 0"/>
+  </g>
+  <!-- soft accent -->
+  <circle cx="100" cy="106" r="3" fill="#C2784A" opacity="0.7"/>
+</svg>
