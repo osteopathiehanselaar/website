@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 520" fill="none">
+  <style>
+    .ring-pulse { transform-origin: 240px 270px; animation: ring-pulse 7s ease-in-out infinite; }
+    .ring-spin { transform-origin: 240px 270px; animation: ring-spin 48s linear infinite; }
+    .ring-spin-rev { transform-origin: 240px 270px; animation: ring-spin-rev 60s linear infinite; }
+    .core-float { animation: core-float 9s ease-in-out infinite; }
+    @keyframes ring-pulse {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.04); }
+    }
+    @keyframes ring-spin { to { transform: rotate(360deg); } }
+    @keyframes ring-spin-rev { to { transform: rotate(-360deg); } }
+    @keyframes core-float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-12px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ring-pulse, .ring-spin, .ring-spin-rev, .core-float { animation: none; }
+    }
+  </style>
+
+  <!-- Soft organic backdrop shapes -->
+  <ellipse cx="240" cy="270" rx="210" ry="220" fill="#E1E9E1"/>
+  <path d="M70 380C40 300 60 180 150 110C240 40 360 60 420 150C480 240 450 380 360 450C270 520 100 460 70 380Z" fill="#F5DECC" fill-opacity="0.55"/>
+
+  <!-- Concentric rings symbolising balance and breathing -->
+  <circle class="ring-pulse" cx="240" cy="270" r="155" stroke="#A1B8A3" stroke-width="1.5"/>
+  <circle cx="240" cy="270" r="112" stroke="#3C5341" stroke-width="1.5" opacity="0.45"/>
+
+  <!-- Orbiting accents -->
+  <g class="ring-spin">
+    <circle cx="240" cy="115" r="9" fill="#C2784A"/>
+  </g>
+  <g class="ring-spin-rev">
+    <circle cx="395" cy="270" r="6" fill="#3C5341" opacity="0.7"/>
+  </g>
+  <g class="ring-spin">
+    <circle cx="240" cy="425" r="5" fill="#A1B8A3"/>
+  </g>
+
+  <!-- Floating core: soft leaf / wave motif representing gentle movement -->
+  <g class="core-float">
+    <circle cx="240" cy="270" r="72" fill="#3C5341" fill-opacity="0.07"/>
+    <g stroke="#3C5341" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M205 272c8-26 34-42 60-37 27 5 42 28 36 53-5 23-29 39-54 35-25-4-50-26-42-51Z"/>
+      <path d="M211 282c16-6 36-6 52 5"/>
+      <path d="M222 258c8-6 18-7 28-3"/>
+    </g>
+  </g>
+</svg>

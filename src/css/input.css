@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+
+  /* Color palette: warm, calm, organic — "Sage & Clay" */
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F2EDE4;
+  --color-paper: #FFFFFF;
+
+  --color-sage-50: #F2F5F1;
+  --color-sage-100: #E1E9E1;
+  --color-sage-200: #C4D4C5;
+  --color-sage-300: #A1B8A3;
+  --color-sage-400: #7E9C81;
+  --color-sage-500: #5F7F62;
+  --color-sage-600: #4A6750;
+  --color-sage-700: #3C5341;
+  --color-sage-800: #2F4233;
+  --color-sage-900: #25342A;
+
+  --color-clay-50: #FBF1EA;
+  --color-clay-100: #F5DECC;
+  --color-clay-200: #EAC2A4;
+  --color-clay-300: #DEA379;
+  --color-clay-400: #D08C5C;
+  --color-clay-500: #C2784A;
+  --color-clay-600: #A6633C;
+  --color-clay-700: #844E31;
+
+  --color-ink: #2B2A26;
+  --color-ink-soft: #5C5A53;
+  --color-line: #E5E0D6;
+
+  /* Radii */
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2.25rem;
+  --radius-4xl: 3rem;
+
+  /* Easing tokens for motion */
+  --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  /* Scroll-reveal: hidden until .is-visible is added by IntersectionObserver */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.8s var(--ease-elegant), transform 0.8s var(--ease-elegant);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-scale {
+    opacity: 0;
+    transform: scale(0.96);
+    transition: opacity 0.9s var(--ease-elegant), transform 0.9s var(--ease-elegant);
+  }
+  .reveal-scale.is-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal-scale {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+
+  /* Stagger delays for grids/lists */
+  .reveal-d1 { transition-delay: 0.08s; }
+  .reveal-d2 { transition-delay: 0.16s; }
+  .reveal-d3 { transition-delay: 0.24s; }
+  .reveal-d4 { transition-delay: 0.32s; }
+  .reveal-d5 { transition-delay: 0.40s; }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-sage-600 px-7 py-3.5 text-sm font-semibold tracking-wide text-cream transition-all duration-300 ease-out hover:bg-sage-700 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-sage-600/20 active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-sage-300 bg-transparent px-7 py-3.5 text-sm font-semibold tracking-wide text-sage-700 transition-all duration-300 ease-out hover:border-sage-500 hover:bg-sage-50 hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-clay {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-clay-400 px-7 py-3.5 text-sm font-semibold tracking-wide text-white transition-all duration-300 ease-out hover:bg-clay-500 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-clay-400/30 active:translate-y-0;
+  }
+
+  .nav-link {
+    @apply relative text-sm font-medium text-ink-soft transition-colors duration-200 hover:text-sage-700;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1.5px;
+    width: 0%;
+    background-color: var(--color-sage-500);
+    transition: width 0.3s var(--ease-elegant);
+  }
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    width: 100%;
+  }
+  .nav-link.is-active {
+    @apply text-sage-700;
+  }
+
+  .card-hover {
+    @apply transition-all duration-500 ease-out hover:-translate-y-1.5 hover:shadow-xl hover:shadow-sage-900/[0.06];
+  }
+}
