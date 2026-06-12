@@ -2,7 +2,7 @@
     <section class="relative overflow-hidden pb-16 pt-36 lg:pt-44">
       <div class="pointer-events-none absolute -right-32 -top-20 h-96 w-96 rounded-full bg-sage-200/50 blur-3xl" data-parallax="0.08"></div>
       <div class="mx-auto max-w-4xl px-6 text-center lg:px-10">
-        <p class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-clay-500">Treatments</p>
+        <p class="reveal text-sm font-semibold uppercase tracking-[0.18em] text-clay-500 inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-clay-400"></span>Treatments</p>
         <h1 class="reveal reveal-d1 mt-4 font-display text-4xl font-medium tracking-tight text-sage-900 sm:text-5xl">For every body, at every age</h1>
         <p class="reveal reveal-d2 mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink-soft">
           Osteopathy can help with a wide range of complaints — from acute pain to recurring tension. Below you'll find what we can help you with.
@@ -14,12 +14,9 @@
     <section class="mx-auto max-w-7xl space-y-24 px-6 py-16 lg:space-y-32 lg:px-10 lg:py-24">
 
       <!-- 1 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal order-2 flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-sage-100 to-cream-dark lg:order-1">
-          <img src="{{ROOT}}assets/img/treatments/back-spine.svg" alt="Line drawing of a treatment for back and spine complaints" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
-        </div>
-        <div class="order-1 lg:order-2">
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Back, neck &amp; joint complaints</h2>
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal order-2 lg:order-1">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Back, neck &amp; joint complaints</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             The most common reason to visit an osteopath. We examine how your whole body moves and treat not only the site of the pain, but also underlying causes.
           </p>
@@ -32,15 +29,22 @@
             <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-clay-400"></span>RSI &amp; overuse</li>
           </ul>
         </div>
+        <div class="reveal-scale order-1 lg:order-2">
+          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-4xl bg-gradient-to-br from-sage-100 via-cream-dark to-clay-50 shadow-lg shadow-sage-900/5">
+            <img src="{{ROOT}}assets/img/photos/behandeling-rug.jpg" alt="Osteopath treating a client's back" class="h-full w-full object-cover" width="800" height="600" loading="lazy" />
+          </div>
+        </div>
       </div>
 
       <!-- 2 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-clay-50 to-cream-dark">
-          <img src="{{ROOT}}assets/img/treatments/head-jaw.svg" alt="Line drawing of a treatment for headaches and jaw complaints" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal-scale order-1">
+          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-4xl bg-gradient-to-br from-sage-100 via-cream-dark to-clay-50 shadow-lg shadow-sage-900/5">
+            <img src="{{ROOT}}assets/img/photos/behandeling-hoofdpijn.jpg" alt="Treatment of head and jaw complaints" class="h-full w-full object-cover" width="800" height="600" loading="lazy" />
+          </div>
         </div>
-        <div>
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Headaches, jaw &amp; dizziness</h2>
+        <div class="reveal order-2">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Headaches, jaw &amp; dizziness</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             Tension in the neck, jaw or head can lead to recurring headaches or a light-headed feeling. Releasing this tension often brings noticeable relief.
           </p>
@@ -56,12 +60,9 @@
       </div>
 
       <!-- 3 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal order-2 flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-sage-100 to-cream-dark lg:order-1">
-          <img src="{{ROOT}}assets/img/treatments/baby.svg" alt="Line drawing of a baby being gently treated" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
-        </div>
-        <div class="order-1 lg:order-2">
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Babies &amp; children</h2>
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal order-2 lg:order-1">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Babies &amp; children</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             Birth is a major physical event — for the baby too. With very gentle techniques, suited to a small body, we support a good start.
           </p>
@@ -74,15 +75,22 @@
             <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-clay-400"></span>Posture &amp; motor development</li>
           </ul>
         </div>
+        <div class="reveal-scale order-1 lg:order-2">
+          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-4xl bg-gradient-to-br from-sage-100 via-cream-dark to-clay-50 shadow-lg shadow-sage-900/5">
+            <img src="{{ROOT}}assets/img/photos/behandeling-kinderen.jpg" alt="Gentle treatment of a baby" class="h-full w-full object-cover" width="800" height="600" loading="lazy" />
+          </div>
+        </div>
       </div>
 
       <!-- 4 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-clay-50 to-cream-dark">
-          <img src="{{ROOT}}assets/img/treatments/pregnancy.svg" alt="Line drawing of a pregnant woman with her hand on her belly" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal-scale order-1">
+          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-4xl bg-gradient-to-br from-sage-100 via-cream-dark to-clay-50 shadow-lg shadow-sage-900/5">
+            <img src="{{ROOT}}assets/img/photos/behandeling-zwangerschap.avif" alt="Treatment during pregnancy" class="h-full w-full object-cover" width="800" height="600" loading="lazy" />
+          </div>
         </div>
-        <div>
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Pregnancy &amp; postpartum recovery</h2>
+        <div class="reveal order-2">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Pregnancy &amp; postpartum recovery</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             During and after pregnancy your body changes significantly. Osteopathy can help relieve complaints and support recovery.
           </p>
@@ -98,12 +106,9 @@
       </div>
 
       <!-- 5 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal order-2 flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-sage-100 to-cream-dark lg:order-1">
-          <img src="{{ROOT}}assets/img/treatments/sport.svg" alt="Line drawing of a runner in motion" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
-        </div>
-        <div class="order-1 lg:order-2">
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Sports &amp; injury prevention</h2>
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div class="reveal order-2 lg:order-1">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Sports &amp; injury prevention</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             Athletes often place uneven demands on their bodies. We help with recovery after an injury, but also look at movement patterns to prevent recurrence.
           </p>
@@ -116,15 +121,16 @@
             <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-clay-400"></span>Preventive maintenance</li>
           </ul>
         </div>
+        <div class="reveal-scale order-1 lg:order-2">
+          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-4xl bg-gradient-to-br from-sage-100 via-cream-dark to-clay-50 shadow-lg shadow-sage-900/5">
+            <img src="{{ROOT}}assets/img/photos/behandeling-sport.jpg" alt="Treatment of a sports injury" class="h-full w-full object-cover" width="800" height="600" loading="lazy" />
+          </div>
+        </div>
       </div>
 
       <!-- 6 -->
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="reveal flex aspect-[4/3] items-center justify-center rounded-4xl bg-gradient-to-br from-clay-50 to-cream-dark">
-          <img src="{{ROOT}}assets/img/treatments/breathing.svg" alt="Line drawing of a person in a calm, breathing posture" class="h-40 w-40 sm:h-48 sm:w-48" width="200" height="200" />
-        </div>
-        <div>
-          <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Stress, fatigue &amp; breathing</h2>
+      <div class="reveal max-w-3xl">
+        <h2 class="reveal font-display text-2xl font-medium tracking-tight text-sage-900 sm:text-3xl">Stress, fatigue &amp; breathing</h2>
           <p class="reveal reveal-d1 mt-5 leading-relaxed text-ink-soft">
             Long-term stress often shows up physically: feeling on edge, shallow breathing or digestive complaints. Osteopathy can help your body find rest again.
           </p>
@@ -136,7 +142,6 @@
             <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sage-500"></span>Sleep problems</li>
             <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-sage-500"></span>Overall wellbeing</li>
           </ul>
-        </div>
       </div>
 
     </section>
@@ -145,7 +150,7 @@
     <section class="bg-sage-50/70 py-24 lg:py-32">
       <div class="mx-auto max-w-3xl px-6 lg:px-10">
         <div class="reveal text-center">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-500">Frequently asked questions</p>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-clay-500 inline-flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-clay-400"></span>Frequently asked questions</p>
           <h2 class="mt-4 font-display text-3xl font-medium tracking-tight text-sage-900 sm:text-4xl">Good to know</h2>
         </div>
 
